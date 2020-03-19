@@ -8,19 +8,29 @@
  		<div class="product__img">
     			<a href=""><img src=""></a>
     		</div>
-    		<div class="product__badge">
-    			<ul class="product__badge-list">
-    				<li class="product__badge-dicount">Скидка</li>
-    				<li class="product__badge-new">Новинка</li>	
-    				<li class="product__badge-hit">Хит продаж</li>		
-    			</ul>
-    		</div>
-    		<div class="product__actions">
-      			<ul class="product__actions-list">
-        			<li><a class="product__add-to-wishlist" href="" title="Добавить в мои желания"></a></li>
-        			<li><a class="product__compare" href="" title="Сравнить"></a></li>
-      			</ul>
-      		</div>
+    		<ul class="product__badge-list">
+    			<li class="product__badge">
+    				<div class="product__badge-dicount">Скидка</div>
+    			</li>
+    			<li class="product__badge">
+    				<div class="product__badge-new">Новинка</div>
+    			</li>	
+    			<li class="product__badge">
+    				<div class="product__badge-hit">Хит продаж</div>
+    			</li>		
+    		</ul>
+      		<ul class="product__actions-list">
+        		<li class="product__action">
+        			<div class="product__add-to-wishlist-box">
+        				<a class="product__add-to-wishlist" href="" title="Добавить в мои желания">Добавить в мои желания</a>
+        			</div>
+        		</li>
+        		<li class="product__action">
+        			<div class="product__compare-box">
+        				<a class="product__compare" href="" title="Сравнить">Сравнить</a>
+        			</div>
+        		</li>
+      		</ul>
       		<h5 class="product__name">Ванна Kaldewei Sanistar</h5>
       		<div class="product__rating">
 			<span class="product__rating-star5" title="Рейтинг 5 из 5">5</span>
@@ -29,16 +39,20 @@
       			<span class="product__store-count">Достаточно</span>
       		</div>
       		<div class="product__price">
-      			<span class="product__price-current">6000 руб.</span>
+      			<span class="product__price-box"> 
+      				<span class="product__price-value">6000</span>
+      				<span class="product__price-currency">руб.</span>
+      			</span>
       		</div>
         	<form class="product__add-to-cart" name="cart" method="post" action="">
         		<div class="product__plus-minus">
-        			<input class="product__minus-button" name="-" type="button" value="-">
+        			<span class="product__minus">-</span>
 				<input class="product__count" name="count" type="text" value="1">
-				<input class="product__plus-button" name="+" type="button" value="+">
+				<span class="product_plus">+</span>
 			</div>
         		<input class="product__cart-button" type="submit" value="В корзину">
         	</form>
- 	</div>	
+	</div>	
  </body
 </html>
+
